@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Figtree";
+  src: url("/assets/fonts/Figtree.woff2") format("woff2");
+  font-weight: 300 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/assets/fonts/PlusJakartaSans.woff2") format("woff2");
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Warm cream background */
+    --background: 0.96 0.018 80;
+    --foreground: 0.15 0.01 20;
+
+    --card: 1 0 0;
+    --card-foreground: 0.15 0.01 20;
+
+    --popover: 1 0 0;
+    --popover-foreground: 0.15 0.01 20;
+
+    /* Orange primary */
+    --primary: 0.65 0.18 48;
+    --primary-foreground: 1 0 0;
+
+    --secondary: 0.97 0.01 80;
+    --secondary-foreground: 0.15 0.01 20;
+
+    --muted: 0.94 0.015 75;
+    --muted-foreground: 0.5 0.01 30;
+
+    --accent: 0.93 0.04 60;
+    --accent-foreground: 0.15 0.01 20;
+
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    --border: 0.88 0.02 75;
+    --input: 0.88 0.02 75;
+    --ring: 0.65 0.18 48;
+
+    /* Chart */
+    --chart-1: 0.65 0.18 48;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+
+    /* Sidebar */
+    --sidebar: 0.14 0.01 20;
+    --sidebar-foreground: 0.95 0 0;
+    --sidebar-primary: 0.65 0.18 48;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.2 0.01 20;
+    --sidebar-accent-foreground: 0.95 0 0;
+    --sidebar-border: 0.25 0.01 20;
+    --sidebar-ring: 0.65 0.18 48;
+
+    /* Brand tokens */
+    --brand-orange: 0.65 0.18 48;
+    --brand-orange-hover: 0.6 0.2 48;
+    --brand-cream: 0.96 0.018 80;
+    --brand-cream-deep: 0.92 0.03 75;
+    --brand-charcoal: 0.14 0.01 20;
+    --brand-star: 0.82 0.15 82;
+    --brand-peach: 0.92 0.05 60;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Plus Jakarta Sans", "Figtree", system-ui, sans-serif;
+  }
+}
